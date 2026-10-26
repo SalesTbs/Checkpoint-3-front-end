@@ -296,11 +296,6 @@ header {
       SECTION - FAQ
 ========================== 
 */
-.faq-section {
-    padding: 80px 20px;
-    color: #2c2c2c;
-    transition: 0.3s ease;
-}
 
 .faq-container {
     max-width: 800px;
@@ -308,9 +303,6 @@ header {
 }
 
 .faq-title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
     letter-spacing: 1px;
     color: var(--c-gold);
 }
