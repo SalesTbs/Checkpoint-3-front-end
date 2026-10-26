@@ -267,6 +267,32 @@ header {
 
 /* 
 ========================== 
+      SECTION - SOBRE
+========================== 
+*/
+#sobre {
+    padding-top: 65px;
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 35px;
+        span {
+            color: var(--c-gold);
+            font-style: italic;
+        }
+    }
+}
+
+#sobre .content-text {
+    width: 100%;
+    span {
+        color: var(--c-text);
+    }
+}
+
+/* 
+========================== 
           RODAPÉ 
 ========================== 
 */
