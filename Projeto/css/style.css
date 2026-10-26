@@ -26,7 +26,11 @@ Fontes:
   --c-text2: #a8a29a;
 }
 
-/* ========== BASE ========== */
+/* 
+========================== 
+          BASE 
+========================== 
+*/
 /* Scroll-Bar Custom */
 body::-webkit-scrollbar {
   width: 12px;             
@@ -41,6 +45,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       
   border: 3px solid var(--c-bgcard);  
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +78,11 @@ ul {
     list-style: none;
 }
 
-/* ========== CLASSES REUTILIZÁVEIS ========== */
+/* 
+=================================== 
+       Classes Reutilizáveis
+=================================== 
+*/
 .container {
     width: 100%;
     max-width: 1100px;
@@ -92,7 +101,11 @@ ul {
     margin-bottom: 50px;
 }
 
-/* ========== HEADER ========== */
+/* 
+========================== 
+          HEADER 
+========================== 
+*/
 header {
     position: sticky;
     top: 0;
@@ -137,7 +150,11 @@ header {
     color: var(--c-gold);
 }
 
-/* ========== HERO ========== */
+/* 
+========================== 
+      SECTION - HERO 
+========================== 
+*/
 .hero {
     display: flex;
     flex-direction: column;
@@ -165,7 +182,12 @@ header {
     font-size: 18px;
 }
 
-/* ========== COLEÇÃO (CARDS) ========== */
+/* 
+========================== 
+    SECTION - COLEÇÃO 
+========================== 
+*/
+
 .products-grid {
     display: flex;
     justify-content: space-between;
@@ -200,7 +222,12 @@ header {
     font-size: 15px;
 }
 
-/* ========== SEÇÕES TEXTO + IMAGEM ========== */
+/* 
+========================== 
+         SECTIONS 
+    A ARTE / MANUTENÇÃO 
+========================== 
+*/
 .content-row {
     display: flex;
     align-items: center;
@@ -238,7 +265,11 @@ header {
     border: 1px solid #2a2a2a;
 }
 
-/* ========== RODAPÉ ========== */
+/* 
+========================== 
+          RODAPÉ 
+========================== 
+*/
 footer {
     background-color: var(--c-bgcard);
     border-top: 1px solid #2a2a2a;
