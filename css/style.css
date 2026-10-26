@@ -293,6 +293,81 @@ header {
 
 /* 
 ========================== 
+      SECTION - FAQ
+========================== 
+*/
+.faq-section {
+    padding: 80px 20px;
+    color: #2c2c2c;
+    transition: 0.3s ease;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: var(--c-gold);
+}
+
+.faq-item {
+    background-color: var(--c-bgcard);
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item[open] {
+    border-color: var(--c-gold);
+}
+
+.faq-question {
+    padding: 20px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--c-text);
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--c-gold);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 24px 24px 24px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--c-text2);
+    border-top: 1px solid var(--c-border);
+    padding-top: 16px;
+}
+
+/* 
+========================== 
           RODAPÉ 
 ========================== 
 */
