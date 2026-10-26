@@ -1,18 +1,46 @@
-/* ========== STYLE GUIDE ==========
+/* 
+============= STYLE GUIDE =============
 Cores:
-  Fundo:          #111111
-  Fundo do card:  #1b1b1b
-  Borda:          #2a2a2a
-  Dourado:        #b8913f
-  Texto:          #f2ede4
-  Texto suave:    #a8a29a
-
+       USO       |    COR    | VARIÁVEL
+----------------------------------------
+  Fundo:         |  #111111  | c-bg
+  Fundo do card: |  #1b1b1b  | c-bgcard
+  Borda:         |  #2a2a2a  | c-border
+  Dourado:       |  #b8913f  | c-gold
+  Texto:         |  #f2ede4  | c-text
+  Texto suave:   |  #a8a29a  | c-text2
+----------------------------------------
 Fontes:
   Títulos: Playfair Display
   Textos:  Inter
-================================= */
+======================================== 
+*/
+
+/* ========== VAR COLORS ========== */
+:root {
+  --c-bg: #111111;
+  --c-bgcard: #1b1b1b;
+  --c-border: #2a2a2a;
+  --c-gold: #b8913f;
+  --c-text: #f2ede4;
+  --c-text2: #a8a29a;
+}
 
 /* ========== BASE ========== */
+/* Scroll-Bar Custom */
+body::-webkit-scrollbar {
+  width: 12px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--c-bgcard);       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--c-gold);   
+  border-radius: 20px;       
+  border: 3px solid var(--c-bgcard);  
+}
 * {
     margin: 0;
     padding: 0;
@@ -24,8 +52,8 @@ html {
 }
 
 body {
-    background-color: #111111;
-    color: #f2ede4;
+    background-color: var(--c-bg);
+    color: var(--c-text);
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     line-height: 1.7;
@@ -38,7 +66,7 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
-    color: #f2ede4;
+    color: var(--c-text);
 }
 
 ul {
@@ -69,7 +97,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #111111;
+    background-color: var(--c-bg);
     border-bottom: 1px solid #2a2a2a;
 }
 
@@ -86,7 +114,7 @@ header {
     font-size: 28px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #b8913f;
+    color: var(--c-gold);
 }
 
 .nav-links {
@@ -101,12 +129,12 @@ header {
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #a8a29a;
+    color: var(--c-text2);
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #b8913f;
+    color: var(--c-gold);
 }
 
 /* ========== HERO ========== */
@@ -127,13 +155,13 @@ header {
 }
 
 .hero h1 span {
-    color: #b8913f;
+    color: var(--c-gold);
     font-style: italic;
 }
 
 .hero p {
     max-width: 600px;
-    color: #a8a29a;
+    color: var(--c-text2);
     font-size: 18px;
 }
 
@@ -145,7 +173,7 @@ header {
 
 .product-card {
     width: 32%;
-    background-color: #1b1b1b;
+    background-color: var(--c-bgcard);
     border: 1px solid #2a2a2a;
     padding: 30px;
     text-align: center;
@@ -153,7 +181,7 @@ header {
 }
 
 .product-card:hover {
-    border-color: #b8913f;
+    border-color: var(--c-gold);
 }
 
 .product-card h3 {
@@ -162,13 +190,13 @@ header {
 }
 
 .price {
-    color: #b8913f;
+    color: var(--c-gold);
     font-size: 20px;
     margin-bottom: 15px;
 }
 
 .desc {
-    color: #a8a29a;
+    color: var(--c-text2);
     font-size: 15px;
 }
 
@@ -195,7 +223,7 @@ header {
 }
 
 .content-text p {
-    color: #a8a29a;
+    color: var(--c-text2);
     margin-bottom: 16px;
 }
 
@@ -212,7 +240,7 @@ header {
 
 /* ========== RODAPÉ ========== */
 footer {
-    background-color: #1b1b1b;
+    background-color: var(--c-bgcard);
     border-top: 1px solid #2a2a2a;
     padding-top: 60px;
 }
@@ -230,23 +258,23 @@ footer {
     font-size: 18px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #b8913f;
+    color: var(--c-gold);
     margin-bottom: 20px;
 }
 
 .footer-col p {
-    color: #a8a29a;
+    color: var(--c-text2);
     font-size: 15px;
 }
 
 .footer-col li {
-    color: #a8a29a;
+    color: var(--c-text2);
     font-size: 15px;
     margin-bottom: 12px;
 }
 
 .footer-col li i {
-    color: #b8913f;
+    color: var(--c-gold);
     width: 20px;
     margin-right: 8px;
 }
@@ -266,13 +294,13 @@ footer {
     margin-right: 12px;
     border: 1px solid #2a2a2a;
     border-radius: 50%;
-    color: #a8a29a;
+    color: var(--c-text2);
     transition: all 0.3s;
 }
 
 .social-links a:hover {
-    border-color: #b8913f;
-    color: #b8913f;
+    border-color: var(--c-gold);
+    color: var(--c-gold);
 }
 
 /* direitos autorais */
@@ -281,6 +309,7 @@ footer {
     margin-top: 50px;
     padding: 20px 0;
     border-top: 1px solid #2a2a2a;
-    color: #a8a29a;
+    color: var(--c-text2);
     font-size: 13px; 
 }
+
